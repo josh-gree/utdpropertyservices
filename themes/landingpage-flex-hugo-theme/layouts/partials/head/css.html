@@ -1,0 +1,32 @@
+<!-- CSS External Libraries -->
+<!-- Light Gallery-->
+<link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lg-transitions.min.css" rel="stylesheet">
+<!-- scrollbar-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.16/css/perfect-scrollbar.min.css" type="text/css" media="screen" />
+
+<!-- Modal-->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.0/jquery.modal.min.css" type="text/css" media="screen" /> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/css/iziModal.min.css" type="text/css" media="screen" /> -->
+
+<!-- highlights -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+
+<!-- Site Base CSS  -->
+<link href="/css/base.css" rel="stylesheet">
+
+<!-- Site CSS  -->
+<link href="/css/page.css" rel="stylesheet">
+
+<!-- Site Navigation CSS  -->
+<link href="/css/navbar.css" rel="stylesheet">
+
+<!-- Responsive Media Queries  -->
+<link href="/css/responsive.css" rel="stylesheet">
+
+<!-- configurable styles -->
+{{ partial "head/styles.html" . }}
+
+<!-- Custom/Override CSS files -->
+{{ range .Site.Params.custom_css }}
+<link rel="stylesheet" href="/css/{{ . }}"> {{ end }}

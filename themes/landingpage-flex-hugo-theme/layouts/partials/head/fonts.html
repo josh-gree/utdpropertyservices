@@ -1,0 +1,36 @@
+<!-- icon fonts -->
+<link href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- base font -->
+<link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+ <!-- monospaced for code -->
+<link href="//fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" type="text/css">
+
+<!-- Configurable  Fonts -->
+{{ with .Site.Params }}
+
+  {{ with .font }}
+  <link href="//fonts.googleapis.com/css?family={{ . }}" rel="stylesheet" type="text/css">
+  {{ end }}
+
+  {{ with .navbar.font }}
+  <link href="//fonts.googleapis.com/css?family={{ . }}" rel="stylesheet" type="text/css">
+  {{ end }}
+
+  {{ with .hero.font }}
+  <link href="//fonts.googleapis.com/css?family={{ . }}" rel="stylesheet" type="text/css">
+  {{ end }}
+
+  {{ with .hero.headlines_font }}
+  <link href="//fonts.googleapis.com/css?family={{ . }}" rel="stylesheet" type="text/css">
+  {{ end }}
+
+  {{ with .sections.font }}
+  <link href="//fonts.googleapis.com/css?family={{ . }}" rel="stylesheet" type="text/css">
+  {{ end }}
+
+  {{ with .sections.font_headline }}
+  <link href="//fonts.googleapis.com/css?family={{ . }}" rel="stylesheet" type="text/css">
+  {{ end }}
+
+{{ end }}

@@ -1,0 +1,50 @@
+<!-- CDNs -->
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!-- light gallery and modules/plugins -->
+<script src="https://cdn.jsdelivr.net/g/lightgallery,lg-autoplay,lg-pager,lg-thumbnail,lg-video"></script>
+<!-- scrollbar -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.16/js/perfect-scrollbar.jquery.min.js"></script>
+<!-- highlights -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<!-- LOCAL -->
+<script src="/js/util.js"></script>
+<!-- sizing tools -->
+<script src="/js/fitToWindow.js"></script>
+<script src="/js/flowType.js"></script>
+<!-- videos embed -->
+<script src="/js/youtube.js"></script>
+<!-- development tools -->
+<script src="/js/lorem.js"></script>
+{{ if isset .Site.Params "googleAnalytics" }}
+<script src="/js/analytics.js"></script>
+{{ end }}
+
+<!-- site specific functions for page use -->
+<script src="/js/page.js"></script>
+
+<!-- Document Ready - Initialize - Window resize calls -->
+<script src="/js/docready.js"></script>
+
+<!-- Custom/Override js files -->
+{{ range .Site.Params.custom_js }}
+   <script src="/js/{{ . }}"></script>
+{{ end }}
+
+<!-- Initialize Photo Galleries with a Lightbox -->
+{{ if .Site.Params.galleries }}
+<script>
+$(document).ready(function () {
+  {{ range.Site.Params.galleries }}
+  {{ $.Site.Params.lightbox | safeJS }}('#{{ . }}'){{ end }}
+});
+</script>
+{{ end }}
+
+<!-- use same lightbox for full sized images in when link="modal" -->
+<script>
+$(document).ready(function () {
+  {{ $.Site.Params.lightbox | safeJS }}('.box--image-lightbox')
+});
+</script>
