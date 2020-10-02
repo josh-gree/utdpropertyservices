@@ -6,7 +6,7 @@
 ## set a baseurl before rendering for deloyment otherwise leave it turned off
 baseURL = "https://josh-gree.github.io/utdpropertyservices/"
 languageCode = "en-us"
-title = "My Landing Page Starter" ## required used for tab title and navbar
+title = "UTD PROPERTY SERVICES" ## required used for tab title and navbar
 canonifyUrls = "true" ## don't change this
 staticDir ="assets" ## don't change this
 publishDir = "docs"  ## default is public/
@@ -36,43 +36,24 @@ lightbox = "lightgallery" ## must match a lightbox function that has been loaded
 [params.navbar]
   # hidden = true  ## turn off for simple page with no navigation topbar
   # logo_text = "Will override site title"  ## default is to use the site Title above
-  logo_text_short = "My Landing Page" ## alternate logo text that helps to fit on small screens without wrapping
+  logo_text_short = "UTD PROPERTY SERVICES" ## alternate logo text that helps to fit on small screens without wrapping
   # logo_text_size="1" ## unit is em, 2em is default
   # font = ""  ## a valid google font name - overrrides the site font above
   ##  All color options can use an html color name or a hex color code.  See either
   ## http://www.quackit.com/css/color/charts/css_color_names_chart.cfm
   ## https://www.colorcodehex.com/html-color-names.html
   color = "ivory"
-  bg_color = "darkgreen"
+  bg_color = "grey"
 
 [params.hero]
   # custom_hero = true  ## All the hero settings below are ignored and the hero is turned off.  You can add then a hero section as hero.md or not.
-  img = "green-landscape-hero.jpg"  # default is hero.jpg,  put assets/images or other location set by imagespath above
+  img = "utdprop.jpeg"  # default is hero.jpg,  put assets/images or other location set by imagespath above
   font = "Open Sans"  # a valid google font name, default Roboto for all hero text
   color = "ivory"
   # bg_color = ""  ## only needed if you are not using a hero image
   text_outline = "black"
   # text_shadow = "black"
   headlines_font = "Righteous"  # a valid google font name, defaults to page font or hero font above
-  ## H1 -
-  headline = "Landing Page Starter"
-  headline_color = "darkgreen"
-  headline_size = "3.5"
-  ## H2
-  subheadline = "Generated From"
-  subheadline_color = "springgreen"
-  subheadline_size = "3"
-  ## H3
-  subsubheadline = "Hugo Flex Theme"
-  subsubheadline_color = "seagreen"
-  subsubheadline_size = "2"
-  ## H4
-  lines = ["Customizable", "Add Your Sections", "Insert Your Content","Super Noob Friendly","See the Guide!"]
-  lines_color = "lightgreen"
-  lines_size = "1.5"
-  divider = true
-  divider_color = "darkgreen"
-  divider_thickness = "3"
 
 ## Parameters used for every section of the page
 [params.sections]
@@ -81,17 +62,11 @@ lightbox = "lightgallery" ## must match a lightbox function that has been loaded
     # headline_font = "Lato"
     # headline_size = "3"
     [params.sections.even]
-    color = "bisque"
-    bg_color = "seagreen"
+    color = "ivory"
+    bg_color = "grey"
     [params.sections.odd]
-    bg_color = "ivory"
-    color = "seagreen"
-    [params.sections.footer]
-    color = "darkolivegreen"
-    bg_color = "lightgreen"
-    [params.sections.comments]
-    color = "darkolivegreen"
-    bg_color = "palegreen"
+    color = "ivory"
+    bg_color = "grey"
 
 ##  an markdown file in content/modals will be available as a modally displayed content
 ##  Use the link shortcode with the url #modal-<filename>
