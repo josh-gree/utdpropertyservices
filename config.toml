@@ -43,7 +43,7 @@ lightbox = "lightgallery" ## must match a lightbox function that has been loaded
   ## http://www.quackit.com/css/color/charts/css_color_names_chart.cfm
   ## https://www.colorcodehex.com/html-color-names.html
   color = "ivory"
-  bg_color = "grey"
+  bg_color = "#121f28"
 
 [params.hero]
   # custom_hero = true  ## All the hero settings below are ignored and the hero is turned off.  You can add then a hero section as hero.md or not.
@@ -63,10 +63,10 @@ lightbox = "lightgallery" ## must match a lightbox function that has been loaded
     # headline_size = "3"
     [params.sections.even]
     color = "ivory"
-    bg_color = "grey"
+    bg_color = "#121f28"
     [params.sections.odd]
     color = "ivory"
-    bg_color = "grey"
+    bg_color = "#121f28"
 
 ##  an markdown file in content/modals will be available as a modally displayed content
 ##  Use the link shortcode with the url #modal-<filename>
