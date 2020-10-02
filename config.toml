@@ -4,12 +4,12 @@
 ## [ ] indicates a setting section never turn those off
 ##
 ## set a baseurl before rendering for deloyment otherwise leave it turned off
-#baseURL = "https://mysite.com/mylandingpage"
+baseURL = "https://josh-gree.github.io/utdpropertyservices/"
 languageCode = "en-us"
 title = "My Landing Page Starter" ## required used for tab title and navbar
 canonifyUrls = "true" ## don't change this
 staticDir ="assets" ## don't change this
-# publishDir = "dist"  ## default is public/
+publishDir = "docs"  ## default is public/
 # contentDir = "sections" ## don't change this
 layoutDir = "plugins" ## don't change this
 theme = "landingpage-flex-hugo-theme" ## don't change this
